@@ -1,4 +1,3 @@
-# firstGitRepository
-First try of Git
+# firsSoapWebService with Spring Boot
 
-HeyHo thats a nice Tutorial of Git!
+First Try to produce a working Spring Boot WebService
