@@ -1,0 +1,56 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://is2.example.com"
+           targetNamespace="http://is2.example.com" elementFormDefault="qualified">
+
+    <xs:element name="getEmployeeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getEmployeeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employee" type="tns:employee"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+        <xs:element name="calculateNettoByEmployeeNameRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="calculateNettoByEmployeeNameResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nettoGehalt" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    <xs:complexType name="employee">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="vorname" type="xs:string"/>
+            <xs:element name="alter" type="xs:int"/>
+            <xs:element name="beruf" type="xs:string"/>
+            <xs:element name="jahresgehalt" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="currency">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GBP"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="PLN"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

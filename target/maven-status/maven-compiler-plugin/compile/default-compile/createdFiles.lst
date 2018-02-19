@@ -1,0 +1,12 @@
+com\example\is2\GetEmployeeRequest.class
+com\example\is2\ObjectFactory.class
+com\example\is2\CalculateNettoByEmployeeNameRequest.class
+com\example\is2\package-info.class
+com\example\is2\CalculateNettoByEmployeeNameResponse.class
+com\is2\EmployeeEndpoint.class
+com\example\is2\Currency.class
+com\example\is2\GetEmployeeResponse.class
+com\example\is2\Employee.class
+com\is2\EmployeeRepository.class
+com\is2\WebServiceConfig.class
+com\is2\Application.class
